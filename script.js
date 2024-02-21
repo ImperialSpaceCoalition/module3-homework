@@ -23,7 +23,7 @@ function generatePassword() {
     var includeNumeric = confirm("Include numeric characters?");
     var includeSpecial = confirm("Include special characters?");
 
-    if (length < 8 || length > 128 || isNaN(length)) {
+    if (length < 8 || length > 16 || isNaN(length)) {
         alert("Invalid input. Password length must be between 8 and 128 characters.");
         return;
     }
